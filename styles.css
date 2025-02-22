@@ -111,32 +111,40 @@ body {
 
 /* Header */
 header {
-    background-color: var(--primary-color);
+    background-color: #007bff;
     padding: 10px 0;
-    text-align: center;
-    color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #fff6dd;
+    color: #cce5ff;
 }
 
 /* Hero Section */
@@ -454,6 +462,50 @@ nav a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+.skill-item i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.skill-category {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.skill-category:nth-child(1) {
+    grid-row: 1;
+}
+
+.skill-category:nth-child(2) {
+    grid-row: 2;
+}
+
+.skill-category:nth-child(3) {
+    grid-row: 3;
 }
 
 .skill-category h3 {
@@ -461,26 +513,6 @@ nav a:hover {
     color: #333;
 }
 
-.skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill-item {
-    background-color: white;
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.skill-item i {
-    font-size: 1.2rem;
-    color: #6c757d;
-}
 .skill-card {
     background-color: white;
     border-radius: 10px;
