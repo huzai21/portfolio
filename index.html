@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Huzaifi Bin Hashim - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e73d060243.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="assets/img/profile.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Muhamad Huzaifi Bin Hashim</h1>
+            <h2>Computer Science Graduate & Developer</h2>
+            <p>Specializing in AI, web development, and mobile applications</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#about" class="btn secondary-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Computer Science graduate with a CGPA of 3.57, specializing in AI, web, and mobile development. Proven experience in developing real-world applications including AI-driven mobile apps, database-powered web solutions, and automated reporting systems. Skilled in Python, Java, Laravel, Flutter, and optimizing workflow efficiency.</p>
+                
+                <div class="about-section">
+                    <h3>Education</h3>
+                    <ul class="about-list">
+                        <li>
+                            <i class="fas fa-graduation-cap"></i>
+                            Bachelor of Computer Science (Hons), UiTM Kuala Terengganu [2021-2025]
+                        </li>
+                        <li>
+                            <i class="fas fa-award"></i>
+                            Dean's List Award: 5 consecutive semesters
+                        </li>
+                        <li>
+                            <i class="fas fa-book"></i>
+                            Relevant Coursework: Machine Learning, Web Development, Data Structures
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="about-section">
+                    <h3>Industrial Training</h3>
+                    <ul class="about-list">
+                        <li>
+                            <i class="fas fa-briefcase"></i>
+                            Internship at iTOOLS SDN BHD, Cyberjaya [Sep 2024 - Jan 2025]
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Automated monthly reporting system using Laravel
+                        </li>
+                        <li>
+                            <i class="fas fa-shield-alt"></i>
+                            Optimized data handling and security
+                        </li>
+                        <li>
+                            <i class="fas fa-rocket"></i>
+                            Led system testing and deployment
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Mobile Vision Skin App -->
+                <div class="project-card" data-modal="#modal-1">
+                    <div class="project-icon">
+                        <div class="icon-group">
+                            <i class="fa-brands fa-flutter"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-tensorflow"></i>
+                        </div>
+                    </div>
+                    <h3>AI-Powered Skin Disease Detection App</h3>
+                    <p>Built a Flutter mobile app using CNN models for early skin disease diagnosis</p>
+                </div>
+
+                <!-- ITPS Report System -->
+                <div class="project-card" data-modal="#modal-2">
+                    <div class="project-icon">
+                        <div class="icon-group">
+                            <i class="fab fa-laravel"></i>
+                            <i class="fab fa-php"></i>
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <h3>Automated Reporting System</h3>
+                    <p>Laravel-based system for automated monthly reporting</p>
+                </div>
+
+                <!-- Freelance Website -->
+                <div class="project-card" data-modal="#modal-3">
+                    <div class="project-icon">
+                        <div class="icon-group">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-php"></i>
+                        </div>
+                    </div>
+                    <h3>Homestay Booking Website</h3>
+                    <p>Responsive website for homestay bookings with real-time availability</p>
+                </div>
+
+                <!-- Pothole Detection App -->
+                <div class="project-card" data-modal="#modal-4">
+                    <div class="project-icon">
+                        <div class="icon-group">
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-tensorflow"></i>
+                            <i class="fa-brands fa-flutter"></i>
+                        </div>
+                    </div>
+                    <h3>Real-Time Pothole Detection</h3>
+                    <p>AI-powered pothole detection using CNN and Flutter</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div id="modal-1" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Mobile Vision Skin Disease App</h2>
+                <div class="modal-section">
+                    <p>Developed a Flutter mobile app using CNN models for early skin disease diagnosis.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Features:</h3>
+                    <ul class="modal-features">
+                        <li>Processed 10,015 dermatoscopic images</li>
+                        <li>Implemented data balancing and grayscale conversion</li>
+                        <li>Achieved 98% classification accuracy</li>
+                        <li>Offloaded AI computations to server</li>
+                        <li>Utilized transfer learning with ResNet-50</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technologies:</h3>
+                    <div class="tech-icons">
+                        <i class="fab fa-flutter"></i>
+                        <i class="fab fa-python"></i>
+                        <i class="fab fa-tensorflow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal-2" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Automated Reporting System</h2>
+                <div class="modal-section">
+                    <p>Developed a Laravel-based system for automated monthly reporting at iTOOLS SDN BHD.</p>
+                    <p>Note: Due to NDA restrictions, no visual assets are shown.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Features:</h3>
+                    <ul class="modal-features">
+                        <li>Automated data processing</li>
+                        <li>Role-based access control</li>
+                        <li>Real-time updates</li>
+                        <li>Enhanced security measures</li>
+                        <li>Improved reporting efficiency</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technologies:</h3>
+                    <div class="tech-icons">
+                        <i class="fab fa-laravel"></i>
+                        <i class="fab fa-php"></i>
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div id="modal-3" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Homestay Booking Website</h2>
+                <div class="modal-section">
+                    <p>Developed a responsive website for homestay bookings using HTML/CSS/JavaScript/PHP.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Features:</h3>
+                    <ul class="modal-features">
+                        <li>Integrated real-time booking system</li>
+                        <li>Customized platform design</li>
+                        <li>Assessed client requirements</li>
+                        <li>Mobile-responsive layout</li>
+                        <li>User authentication system</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technologies:</h3>
+                    <div class="tech-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-php"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div id="modal-4" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Real-Time Pothole Detection</h2>
+                <div class="modal-section">
+                    <p>Developed a real-time pothole detection app using CNN-based image recognition.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Features:</h3>
+                    <ul class="modal-features">
+                        <li>Real-time image recognition</li>
+                        <li>Automated road analysis</li>
+                        <li>Instant feedback to users</li>
+                        <li>Processed vehicle-mounted images</li>
+                        <li>Deployed on mobile devices</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technologies:</h3>
+                    <div class="tech-icons">
+                        <i class="fab fa-python"></i>
+                        <i class="fab fa-flutter"></i>
+                        <i class="fab fa-tensorflow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">
+                            <i class="fab fa-python"></i> Python
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-java"></i> Java
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-js"></i> JavaScript
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-php"></i> PHP
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">
+                            <i class="fab fa-tensorflow"></i> TensorFlow/Keras
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-laravel"></i> Laravel
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-flutter"></i> Flutter
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-android"></i> Android Studio
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">
+                            <i class="fab fa-github"></i> Git/GitHub
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-vscode"></i> Visual Studio Code
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-database"></i> MySQL Workbench
+                        </span>
+                        <span class="skill-item">
+                            <i class="fab fa-android"></i> Android Studio
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h3>Methodologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">
+                            <i class="fas fa-code-branch"></i> Agile
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-sitemap"></i> Scrum
+                        </span>
+                        <span class="skill-item">
+                            <i class="fas fa-project-diagram"></i> Waterfall
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: huzaifi22@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/muhamad-huzaifi-bin-hashim-0894a8310" target="_blank">Muhamad Huzaifi Bin Hashim</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Muhamad Huzaifi Bin Hashim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
