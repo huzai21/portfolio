@@ -24,6 +24,7 @@
     </header>
 
     <section id="hero">
+        <div class="hero-background"></div>
         <div class="hero-content">
             <img src="assets/img/profile.jpg" alt="Profile Picture" class="profile-picture">
             <h1>Muhamad Huzaifi Bin Hashim</h1>
@@ -33,6 +34,16 @@
                 <a href="#projects" class="btn primary-btn">View My Work</a>
                 <a href="#about" class="btn secondary-btn">Learn More</a>
             </div>
+        </div>
+        <div class="particles">
+            <div class="particle" style="left: 20%; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 40%; animation-delay: 0.5s;"></div>
+            <div class="particle" style="left: 60%; animation-delay: 1s;"></div>
+            <div class="particle" style="left: 80%; animation-delay: 1.5s;"></div>
+            <div class="particle" style="right: 20%; animation-delay: 2s;"></div>
+            <div class="particle" style="right: 40%; animation-delay: 2.5s;"></div>
+            <div class="particle" style="right: 60%; animation-delay: 3s;"></div>
+            <div class="particle" style="right: 80%; animation-delay: 3.5s;"></div>
         </div>
     </section>
 
@@ -46,14 +57,17 @@
                     <h3>Education</h3>
                     <ul class="about-list">
                         <li>
+                            <br>
                             <i class="fas fa-graduation-cap"></i>
                             Bachelor of Computer Science (Hons), UiTM Kuala Terengganu [2021-2025]
                         </li>
                         <li>
+                            <br>
                             <i class="fas fa-award"></i>
                             Dean's List Award: 5 consecutive semesters
                         </li>
                         <li>
+                            <br>
                             <i class="fas fa-book"></i>
                             Relevant Coursework: Machine Learning, Web Development, Data Structures
                         </li>
@@ -64,18 +78,22 @@
                     <h3>Industrial Training</h3>
                     <ul class="about-list">
                         <li>
+                            <br>
                             <i class="fas fa-briefcase"></i>
                             Internship at iTOOLS SDN BHD, Cyberjaya [Sep 2024 - Jan 2025]
                         </li>
                         <li>
+                            <br>
                             <i class="fas fa-check-circle"></i>
                             Automated monthly reporting system using Laravel
                         </li>
                         <li>
+                            <br>
                             <i class="fas fa-shield-alt"></i>
                             Optimized data handling and security
                         </li>
                         <li>
+                            <br>
                             <i class="fas fa-rocket"></i>
                             Led system testing and deployment
                         </li>
@@ -91,55 +109,110 @@
             <div class="project-grid">
                 <!-- Mobile Vision Skin App -->
                 <div class="project-card" data-modal="#modal-1">
-                    <div class="project-icon">
-                        <div class="icon-group">
-                            <i class="fa-brands fa-flutter"></i>
-                            <i class="fab fa-python"></i>
-                            <i class="fab fa-tensorflow"></i>
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-icon">
+                                <div class="icon-group">
+                                    <i class="fa-brands fa-flutter"></i>
+                                    <i class="fab fa-python"></i>
+                                    <i class="fab fa-tensorflow"></i>
+                                </div>
+                            </div>
+                            <h3>AI-Powered Skin Disease Detection App</h3>
+                            <p>Built a Flutter mobile app using CNN models for early skin disease diagnosis</p>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Key Features</h3>
+                            <ul class="project-details-list">
+                                <li><i class="fas fa-check"></i> Processed 10,015 dermatoscopic images</li>
+                                <li><i class="fas fa-check"></i> Data balancing and grayscale conversion</li>
+                                <li><i class="fas fa-check"></i> 98% classification accuracy</li>
+                                <li><i class="fas fa-check"></i> AI computations offloaded to server</li>
+                            </ul>
                         </div>
                     </div>
-                    <h3>AI-Powered Skin Disease Detection App</h3>
-                    <p>Built a Flutter mobile app using CNN models for early skin disease diagnosis</p>
                 </div>
 
                 <!-- ITPS Report System -->
                 <div class="project-card" data-modal="#modal-2">
-                    <div class="project-icon">
-                        <div class="icon-group">
-                            <i class="fab fa-laravel"></i>
-                            <i class="fab fa-php"></i>
-                            <i class="fas fa-database"></i>
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-icon">
+                                <div class="icon-group">
+                                    <i class="fab fa-laravel"></i>
+                                    <i class="fab fa-php"></i>
+                                    <i class="fas fa-database"></i>
+                                </div>
+                            </div>
+                            <h3>Automated Reporting System</h3>
+                            <p>Laravel-based system for automated monthly reporting</p>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Key Features</h3>
+                            <ul class="project-details-list">
+                                <li><i class="fas fa-check"></i> Automated data processing</li>
+                                <li><i class="fas fa-check"></i> Role-based access control</li>
+                                <li><i class="fas fa-check"></i> Real-time updates</li>
+                                <li><i class="fas fa-check"></i> Enhanced security measures</li>
+                                <li><i class="fas fa-check"></i> Improved reporting efficiency</li>
+                            </ul>
                         </div>
                     </div>
-                    <h3>Automated Reporting System</h3>
-                    <p>Laravel-based system for automated monthly reporting</p>
                 </div>
 
                 <!-- Freelance Website -->
                 <div class="project-card" data-modal="#modal-3">
-                    <div class="project-icon">
-                        <div class="icon-group">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-php"></i>
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-icon">
+                                <div class="icon-group">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-php"></i>
+                                </div>
+                            </div>
+                            <h3>Homestay Booking Website</h3>
+                            <p>Responsive website for homestay bookings with real-time availability</p>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Key Features</h3>
+                            <ul class="project-details-list">
+                                <li><i class="fas fa-check"></i> Integrated real-time booking system</li>
+                                <li><i class="fas fa-check"></i> Customized platform design</li>
+                                <li><i class="fas fa-check"></i> Assessed client requirements</li>
+                                <li><i class="fas fa-check"></i> Mobile-responsive layout</li>
+                                <li><i class="fas fa-check"></i> User authentication system</li>
+                            </ul>
                         </div>
                     </div>
-                    <h3>Homestay Booking Website</h3>
-                    <p>Responsive website for homestay bookings with real-time availability</p>
                 </div>
 
                 <!-- Pothole Detection App -->
                 <div class="project-card" data-modal="#modal-4">
-                    <div class="project-icon">
-                        <div class="icon-group">
-                            <i class="fab fa-python"></i>
-                            <i class="fab fa-tensorflow"></i>
-                            <i class="fa-brands fa-flutter"></i>
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-icon">
+                                <div class="icon-group">
+                                    <i class="fab fa-python"></i>
+                                    <i class="fab fa-tensorflow"></i>
+                                    <i class="fa-brands fa-flutter"></i>
+                                </div>
+                            </div>
+                            <h3>Real-Time Pothole Detection</h3>
+                            <p>AI-powered pothole detection using CNN and Flutter</p>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Key Features</h3>
+                            <ul class="project-details-list">
+                                <li><i class="fas fa-check"></i> Real-time image recognition</li>
+                                <li><i class="fas fa-check"></i> Automated road analysis</li>
+                                <li><i class="fas fa-check"></i> Instant feedback to users</li>
+                                <li><i class="fas fa-check"></i> Processed vehicle-mounted images</li>
+                                <li><i class="fas fa-check"></i> Deployed on mobile devices</li>
+                            </ul>
                         </div>
                     </div>
-                    <h3>Real-Time Pothole Detection</h3>
-                    <p>AI-powered pothole detection using CNN and Flutter</p>
                 </div>
             </div>
         </div>
