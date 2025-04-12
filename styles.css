@@ -533,33 +533,25 @@ nav a:hover::after {
 }
 
 .project-icon {
-    width: 120px;
-    height: 120px;
-    background: var(--light-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 25px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.project-card:hover .project-icon {
-    transform: scale(1.1);
 }
 
 .icon-group {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .icon-group i {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--primary-color);
     transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-group i:hover {
+    transform: scale(1.1);
+    color: #0056b3;
 }
 
 .project-card h3 {
