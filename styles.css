@@ -610,8 +610,14 @@ nav a:hover::after {
 .project-card h3 {
     font-size: 1.8rem;
     margin: 20px 0;
-    color: #ffffff;
+    /* Was #ffffff, which made the project title invisible on the white front face. */
+    color: var(--dark-color);
     text-align: center;
+}
+
+/* The back face sits on a blue gradient, so its heading stays white. */
+.project-card-back h3 {
+    color: #ffffff;
 }
 
 .project-card-front p {
